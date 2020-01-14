@@ -248,7 +248,6 @@ function initializeReplHistory(server) {
  * Start baapan REPL
  */
 function startRepl() {
-  console.log(workspacePath);
   switchToWorkspace(workspacePath);
   wrapRequire();
   // if history size is specified and is positive, set as max repl history size. default is 1000
