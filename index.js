@@ -239,8 +239,8 @@ function initializeReplHistory(server) {
   try {
     readFileSync(replHistoryPath).toString()
       .split('\n')
-      .filter(line => line.trim())
-      .map(line => server.history.push(line));
+      .filter((line) => line.trim())
+      .map((line) => server.history.push(line));
   } catch (err) {
     // can ignore this error.
     // error in persist history should not terminate the execution of code
