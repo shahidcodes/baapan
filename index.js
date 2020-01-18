@@ -11,6 +11,7 @@ import 'colors';
 
 let workspacePath = process.env.BAAPAN_WS_PATH;
 let shouldCleanup = false;
+const HOME_DIR = os.homedir();
 if (!process.env.BAAPAN_WS_PATH) {
   const WORKSPACE_DIR = `.baapan/workspace_${process.pid}_${Date.now()}`;
   workspacePath = path.join(HOME_DIR, WORKSPACE_DIR);
